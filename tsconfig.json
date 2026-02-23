@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/runtime" },
+    { "path": "./packages/providers/ses" },
+    { "path": "./packages/providers/sendgrid" },
+    { "path": "./packages/providers/smtp" },
+    { "path": "./packages/providers/gmail" },
+    { "path": "./packages/providers/zeptomail" },
+    { "path": "./packages/mcp" },
+    { "path": "./packages/examples" }
+  ]
+}

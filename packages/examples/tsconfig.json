@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "references": [
+    { "path": "../runtime" },
+    { "path": "../providers/ses" },
+    { "path": "../providers/sendgrid" },
+    { "path": "../providers/smtp" },
+    { "path": "../providers/gmail" },
+    { "path": "../providers/zeptomail" },
+    { "path": "../mcp" }
+  ]
+}

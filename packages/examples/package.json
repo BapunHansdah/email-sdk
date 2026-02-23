@@ -1,0 +1,18 @@
+{
+  "name": "@email-sdk/examples",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@email-sdk/mcp": "1.0.0",
+    "@email-sdk/provider-gmail": "1.0.0",
+    "@email-sdk/provider-ses": "1.0.0",
+    "@email-sdk/provider-sendgrid": "1.0.0",
+    "@email-sdk/provider-smtp": "1.0.0",
+    "@email-sdk/provider-zeptomail": "1.0.0",
+    "@email-sdk/runtime": "1.0.0"
+  }
+}

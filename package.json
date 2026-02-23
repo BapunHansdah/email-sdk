@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "build": "tsc -b",
-    "typecheck": "tsc -b --pretty"
+    "typecheck": "tsc -b --pretty",
+    "publish:all": "npm publish --workspace packages/core --access public && npm publish --workspace packages/runtime --access public && npm publish --workspace packages/providers/ses --access public && npm publish --workspace packages/providers/sendgrid --access public && npm publish --workspace packages/providers/smtp --access public && npm publish --workspace packages/providers/gmail --access public && npm publish --workspace packages/providers/zeptomail --access public && npm publish --workspace packages/mcp --access public"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",

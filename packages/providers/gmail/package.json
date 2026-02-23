@@ -1,9 +1,14 @@
 {
   "name": "@email-sdk/provider-gmail",
+  "description": "Gmail API provider plugin for Email SDK",
+  "license": "MIT",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -14,11 +19,18 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -b"
+    "build": "tsc -b",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@email-sdk/core": "1.0.0",
     "google-auth-library": "^9.15.1",
     "googleapis": "^144.0.0"
-  }
+  },
+  "keywords": [
+    "email",
+    "sdk",
+    "gmail",
+    "googleapis"
+  ]
 }

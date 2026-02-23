@@ -1,9 +1,14 @@
 {
   "name": "@email-sdk/runtime",
+  "description": "Provider-agnostic orchestration runtime for Email SDK",
+  "license": "MIT",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -14,9 +19,16 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -b"
+    "build": "tsc -b",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@email-sdk/core": "1.0.0"
-  }
+  },
+  "keywords": [
+    "email",
+    "sdk",
+    "runtime",
+    "typescript"
+  ]
 }

@@ -139,35 +139,6 @@ npm run typecheck
 npm run build
 ```
 
-## Publish to npm (Public)
-
-Prerequisites:
-
-- You own the npm scope used in package names (currently `@email-sdk/*`).
-- You are logged in: `npm login`.
-
-Recommended release flow:
-
-```bash
-npm run typecheck
-npm run build
-```
-
-Publish in dependency order:
-
-```bash
-npm publish --workspace packages/core --access public
-npm publish --workspace packages/runtime --access public
-npm publish --workspace packages/providers/ses --access public
-npm publish --workspace packages/providers/sendgrid --access public
-npm publish --workspace packages/providers/smtp --access public
-npm publish --workspace packages/providers/gmail --access public
-npm publish --workspace packages/providers/zeptomail --access public
-npm publish --workspace packages/mcp --access public
-```
-
-Note: `packages/examples` is private and is not publishable.
-
 ## Quick Start
 
 ```ts
